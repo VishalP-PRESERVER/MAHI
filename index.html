@@ -8,22 +8,23 @@
   </head>
 
   <body>
+  <div id="cover" class="cover">
+    <button onclick="revealPage()">Click Here 💌</button>
+  </div>
+
+  <div id="main-content" class="hidden">
     <div class="image-container">
-      <img
-        id="cuteImage"
-        class="blurred"
-        src="images.png"
-        alt="cutaaa"
-        width="600"
-      />
-
-      <button
-        onclick="document.getElementById('cuteImage').classList.remove('blurred')"
-      >
-        Click to Reveal ❤️
-      </button>
+      <img id="cuteImage" src="images.png" alt="cutaaa" width="600" />
     </div>
-
     <h1>Ammo enti intha andham ga unav</h1>
-  </body>
+  </div>
+
+  <script>
+    function revealPage() {
+      document.getElementById("cover").style.display = "none";
+      document.getElementById("main-content").classList.remove("hidden");
+    }
+  </script>
+</body>
+
 </html>

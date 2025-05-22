@@ -1,38 +1,4 @@
 body {
-  background-color: rgb(224, 109, 205);
-}
-.image-container {
-  text-align: center;
-  margin-top: 50px;
-}
-
-.blurred {
-  filter: blur(12px);
-  transition: filter 0.5s ease;
-}
-
-img.blurred {
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
-}
-
-button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: white;
-  color: rgb(224, 109, 205);
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-button:hover {
-  background-color: rgb(250, 225, 245);
-}
-
-body {
   margin: 0;
   font-family: sans-serif;
   background-color: black; /* default background */
@@ -77,3 +43,4 @@ body {
 .image-container {
   margin-top: 50px;
 }
+

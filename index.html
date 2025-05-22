@@ -7,24 +7,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
-  <div id="cover" class="cover">
-    <button onclick="revealPage()">Click Here 💌</button>
-  </div>
-
-  <div id="main-content" class="hidden">
-    <div class="image-container">
-      <img id="cuteImage" src="images.png" alt="cutaaa" width="600" />
+ <body>
+    <!-- Full black cover -->
+    <div id="cover" class="cover">
+      <button onclick="revealPage()">Click Here 💌</button>
     </div>
-    <h1>Ammo enti intha andham ga unav</h1>
-  </div>
 
-  <script>
-    function revealPage() {
-      document.getElementById("cover").style.display = "none";
-      document.getElementById("main-content").classList.remove("hidden");
-    }
-  </script>
-</body>
+    <!-- Main page content -->
+    <div id="main-content" class="hidden">
+      <div class="image-container">
+        <img id="cuteImage" src="images.png" alt="cutaaa" width="600" />
+      </div>
+      <h1>Ammo enti intha andham ga unav</h1>
+    </div>
+
+    <!-- Reveal Script -->
+    <script>
+      function revealPage() {
+        const cover = document.getElementById("cover");
+        cover.style.opacity = "0";
+        cover.style.pointerEvents = "none";
+        document.getElementById("main-content").classList.remove("hidden");
+      }
+    </script>
+  </body>
 
 </html>
